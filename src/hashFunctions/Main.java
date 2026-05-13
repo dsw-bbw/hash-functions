@@ -16,10 +16,10 @@ public class Main {
             System.out.println(" ");
             System.out.println("Hash Verfahren: \n" +
                     "[1] MurmurHash \n" +
-                    "[2] ");
-            int hash = switch (sc.nextInt()) {
+                    "[2] FNV-1a");
+            String hash = switch (sc.nextInt()) {
                 case 1 -> MurmurHash.hash(key);
-
+                case 2 -> FNV1a.hash(key);
                 default -> throw new IllegalStateException("Unexpected value: " + sc.nextInt());
             };
             System.out.println("Der berechnete Wert lautet: " + hash);
