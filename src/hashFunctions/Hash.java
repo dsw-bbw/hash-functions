@@ -1,5 +1,5 @@
 package hashFunctions;
 
-public enum Function {
+public enum Hash {
     MURMUR3
 }
