@@ -8,7 +8,7 @@ public class MurmurHash {
 
     private static final int SEED = 45;
 
-    public static int hash(String key) {
+    public static String hash(String key) {
         byte[] data = key.getBytes();
         int length = data.length;
         int seed = SEED;
@@ -46,7 +46,7 @@ public class MurmurHash {
         seed *= 0xc2b2ae35;
         seed ^= (seed >>> 16);
 
-        return seed;
+        return String.valueOf(seed);
     }
 
     private static int get32BitNumber(byte[] data) {

@@ -1,5 +1,6 @@
 package hashFunctions;
 
+import hashFunctions.FNV1a.FNV1a;
 import hashFunctions.MurmurHash.MurmurHash;
 
 import java.util.Scanner;
